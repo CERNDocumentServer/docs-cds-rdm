@@ -1,0 +1,314 @@
+/* Custom CSS for CDS Documentation - Beautiful & Modern */
+
+:root {
+  --cern-blue: #0066cc;
+  --cern-blue-dark: #004999;
+  --cern-blue-light: #3399ff;
+  --accent-color: #00d4ff;
+  --gradient-primary: linear-gradient(135deg, #0066cc 0%, #00d4ff 100%);
+  --gradient-hero: linear-gradient(
+    135deg,
+    rgba(0, 102, 204, 0.95) 0%,
+    rgba(0, 212, 255, 0.85) 100%
+  );
+  --neutral-50: #fafafa;
+  --neutral-100: #f5f5f5;
+  --neutral-200: #e0e0e0;
+  --neutral-800: #2c3e50;
+}
+
+/* Beautiful color scheme */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: var(--cern-blue);
+  --md-primary-fg-color--light: var(--cern-blue-light);
+  --md-primary-fg-color--dark: var(--cern-blue-dark);
+  --md-accent-fg-color: var(--accent-color);
+  --md-typeset-a-color: var(--cern-blue);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: var(--cern-blue-light);
+  --md-accent-fg-color: var(--accent-color);
+}
+
+/* Beautiful header with gradient */
+.md-header {
+  background: var(--gradient-primary) !important;
+  box-shadow: 0 4px 20px rgba(0, 102, 204, 0.2);
+}
+
+.md-header__title {
+  font-weight: 600;
+}
+
+/* Beautiful typography */
+.md-typeset {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--neutral-800);
+}
+
+.md-typeset h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.01em;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--md-default-fg-color);
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid transparent;
+  border-image: var(--gradient-primary) 1;
+  border-image-slice: 1;
+  width: fit-content;
+}
+
+.md-typeset h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  color: var(--cern-blue);
+  position: relative;
+  padding-left: 1rem;
+}
+
+.md-typeset h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+  bottom: 0.3rem;
+  width: 4px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+}
+
+/* Beautiful modern cards with gradients */
+.grid.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+}
+
+.grid.cards > * {
+  background: white;
+  border: none;
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.grid.cards > *::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.grid.cards > *:hover {
+  box-shadow: 0 8px 24px rgba(0, 102, 204, 0.15);
+  transform: translateY(-4px);
+}
+
+.grid.cards > *:hover::before {
+  opacity: 1;
+}
+
+[data-md-color-scheme="slate"] .grid.cards > * {
+  background: var(--md-code-bg-color);
+}
+
+/* Beautiful gradient icons */
+.grid.cards svg.lg {
+  height: 3rem;
+  width: 3rem;
+  margin-bottom: 1rem;
+  background: var(--gradient-primary);
+  padding: 0.75rem;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.2);
+}
+
+.grid.cards .middle {
+  vertical-align: middle;
+}
+
+/* Attractive card links */
+.grid.cards a[href] {
+  color: var(--cern-blue);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.grid.cards a[href]:hover {
+  gap: 0.75rem;
+  color: var(--cern-blue-dark);
+}
+
+.grid.cards a[href] svg {
+  transition: transform 0.2s ease;
+}
+
+.grid.cards a[href]:hover svg {
+  transform: translateX(2px);
+}
+
+/* Clean code blocks */
+.highlight code {
+  font-size: 0.9em;
+}
+
+.md-typeset pre {
+  border-radius: 6px;
+}
+
+/* Simple table styling */
+.md-typeset table:not([class]) {
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--neutral-200);
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--neutral-100);
+  font-weight: 600;
+  padding: 0.875rem 1rem;
+  border-bottom: 2px solid var(--neutral-200);
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.75rem 1rem;
+}
+
+/* Beautiful admonitions with gradients */
+.md-typeset .admonition {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  position: relative;
+}
+
+.md-typeset .admonition::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+}
+
+.md-typeset .admonition-title {
+  font-weight: 600;
+}
+
+.md-typeset .admonition.info::before {
+  background: var(--gradient-primary);
+}
+
+.md-typeset .admonition.tip::before {
+  background: linear-gradient(135deg, #4caf50 0%, #81c784 100%);
+}
+
+.md-typeset .admonition.warning::before {
+  background: linear-gradient(135deg, #ff9800 0%, #ffb74d 100%);
+}
+
+/* Clean image styling */
+.md-typeset img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--neutral-200);
+}
+
+[data-md-color-scheme="slate"] .md-typeset img {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border-color: var(--md-default-fg-color--lightest);
+}
+
+/* Beautiful links with gradient underline */
+.md-typeset a {
+  text-decoration: none;
+  color: var(--cern-blue);
+  transition: all 0.2s ease;
+  background-image: linear-gradient(to right, var(--cern-blue), var(--accent-color));
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.md-typeset a:hover {
+  color: var(--cern-blue-dark);
+  background-size: 100% 2px;
+}
+
+/* Gradient horizontal rules */
+.md-typeset hr {
+  border: none;
+  height: 3px;
+  background: var(--gradient-primary);
+  margin: 3rem 0;
+  border-radius: 2px;
+  opacity: 0.6;
+}
+
+/* Spacing */
+.md-typeset ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Smooth behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 76.1875em) {
+  .grid.cards {
+    grid-template-columns: 1fr;
+  }
+
+  .md-typeset h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 44.9375em) {
+  .grid.cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .grid.cards > * {
+    padding: 1.5rem;
+  }
+
+  .md-typeset h1 {
+    font-size: 1.35rem;
+  }
+}

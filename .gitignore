@@ -1,0 +1,6 @@
+*DS_Store
+site/*
+.cache
+uv.lock
+public/
+.venv
