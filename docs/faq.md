@@ -14,6 +14,7 @@ In the legacy system, report numbers were often automatically added to submitted
 - **No reservation system**: users would guess the next number for PDFs before submission, but the number could change, causing errors
 
 !!! info "Important Change"
+
     The new CDS repository **does not automatically generate report numbers**.
 
 Instead, you can:
@@ -34,11 +35,12 @@ The new CDS repository follows international open science best practices by assi
 - **Assignment:** Automatic upon publication (or can be reserved in advance)
 
 !!! tip "Learn More"
-    See the [New Upload guide](deposit/uploads.md) for step-by-step instructions on working with DOIs.
+
+    See the [Upload](deposit/upload.md) documentation to learn how to manage DOIs for your uploads.
 
 ### What is a DOI?
 
- A DOI is a persistent, globally unique identifier for digital objects that:
+A DOI is a persistent, globally unique identifier for digital objects that:
 
 - Provides a stable, permanent link to your publication
 - Follows the format `https://doi.org/10.xxxx/xxxxx`
@@ -50,9 +52,5 @@ The new CDS repository follows international open science best practices by assi
 To do
 
 ## How do I link a CDS publication with the one in INSPIREHep?
-
-To do
-
-## Publication reviews
 
 To do

@@ -1,4 +1,4 @@
-site_name: Help
+site_name: Documentation
 site_url: https://repository.cern
 site_description: Documentation for CERN Document Server (CDS)
 site_author: CERN
@@ -14,25 +14,11 @@ theme:
   name: material
   language: en
 
-  # Color palette with light/dark mode toggle
+  # Color palette
   palette:
-    # Light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: custom
-      accent: blue
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-
-    # Dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: custom
-      accent: blue
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+    scheme: default
+    primary: custom
+    accent: blue
 
   # Font configuration
   font:
@@ -65,25 +51,25 @@ theme:
     - content.tooltips # Improved tooltips
     - content.action.edit # Edit button
 
-  # Icon overrides
-  icon:
-    repo: fontawesome/brands/github
-    edit: material/pencil
-    view: material/eye
-    logo: material/database
-    admonition:
-      note: octicons/tag-16
-      abstract: octicons/checklist-16
-      info: octicons/info-16
-      tip: octicons/light-bulb-16
-      success: octicons/check-16
-      question: octicons/question-16
-      warning: octicons/alert-16
-      failure: octicons/x-circle-16
-      danger: octicons/zap-16
-      bug: octicons/bug-16
-      example: octicons/beaker-16
-      quote: octicons/quote-16
+  # # Icon overrides
+  # icon:
+  #   repo: fontawesome/brands/github
+  #   edit: material/pencil
+  #   view: material/eye
+  #   logo: material/database
+  #   admonition:
+  #     note: octicons/tag-16
+  #     abstract: octicons/checklist-16
+  #     info: octicons/info-16
+  #     tip: octicons/light-bulb-16
+  #     success: octicons/check-16
+  #     question: octicons/question-16
+  #     warning: octicons/alert-16
+  #     failure: octicons/x-circle-16
+  #     danger: octicons/zap-16
+  #     bug: octicons/bug-16
+  #     example: octicons/beaker-16
+  #     quote: octicons/quote-16
 
 # Plugins
 plugins:
@@ -112,16 +98,28 @@ extra_css:
 extra:
   # Social links
   social:
-    - icon: fontawesome/brands/github
-      link: ""
-      name: CDS on GitHub
     - icon: fontawesome/solid/globe
       link: https://repository.cern
       name: CDS Repository
+    - icon: fontawesome/brands/github
+      link: https://github.com/cerndocumentserver/cds-rdm
+      name: CDS-RDM on GitHub
 
 # Navigation structure
 nav:
   - Home: index.md
   - Deposit:
-    - Upload: deposit/uploads.md
+      - Upload: deposit/upload.md
+      - Published records: deposit/published-records.md
+      - Restrict & Share: deposit/restrict-share.md
+  - Search:
+      - How to search: search/search.md
+  - Communities:
+      - About communities: communities/communities.md
+      - Manage: communities/manage.md
+      - Submit: communities/submit.md
+  - Reviews:
+      - About reviews: review/review.md
+      - Commenting: review/comments.md
+  - Reference: reference/reference.md
   - FAQ: faq.md

@@ -1,7 +1,3 @@
-Welcome to the **CDS (CERN Document Server) Help** documentation.
-
-## About CDS
-
 CDS (CERN Document Server) is the **CERN Institutional Repository**.
 It preserves and disseminates CERN's research outputs — including **publications, software, datasets, departmental documents, and multimedia materials** — ensuring their long-term accessibility.
 
@@ -13,25 +9,28 @@ When you deposit a document in CDS, it becomes part of CERN's permanent record a
 Deposits can be made **public** or **restricted** to specific audiences (e.g. CERN users only).
 
 !!! warning "Record deletion"
-    Once a record is published, it **cannot be deleted**.
-    A short **grace period** is available to correct mistakes — see our [Content Policy](https://repository.cern/content-policy) for details.
 
-## What to deposit
+    Once a record is published, it **cannot be deleted**.
+    A short **grace period** is available to correct mistakes. See our [Content Policy](https://repository.cern/content-policy) for details.
+
+## ✅ What to deposit
 
 You can find detailed guidance in our [Content Policy](https://repository.cern/content-policy), but in general CDS is intended for:
 
-- Final versions of CERN research papers and reports
-- Official datasets and software releases
-- :Departmental and administrative documents meant for long-term preservation
-- Official multimedia (e.g. event recordings, outreach videos)
+- Final versions of CERN research publications
+- Datasets and software releases
+- Departmental and administrative documents meant for long-term preservation
+- Official multimedia (e.g. photos)
 
-## What **not** to deposit
+## ❌ What **not** to deposit
 
 CDS is **not** the right place for:
 
 - **Personal** documents or multimedia
 - **Work-in-progress** materials or drafts
 - **Temporary** files or items not meant for archival preservation
+
+For such content, evaluate using [CERNBox](https://cernbox.cern.ch) instead.
 
 ## Ongoing migration
 

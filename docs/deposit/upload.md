@@ -1,6 +1,13 @@
 # Upload
 
+Metadata and files...
+Who can upload
 
+## Required metadata
+
+Title, resource type, authors/creators
+
+### Resource type
 
 ## DOIs
 
@@ -15,3 +22,9 @@ If you already have a DOI from an external source, you can provide it:
 It is important to avoid multiple DOIs for the same publication: if already have an external DOI, please use that one.
 
 When requesting a DOI, CDS will register two DOIs. Read more on the [DOI versioning FAQ](https://repository.cern/help/versioning).
+
+## Other metadata fields
+
+## Files
+
+### Embargo
