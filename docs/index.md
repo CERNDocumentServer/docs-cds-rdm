@@ -13,7 +13,7 @@ Deposits can be made **public** or **restricted** to specific audiences (e.g. CE
     Once a record is published, it **cannot be deleted**.
     A short **grace period** is available to correct mistakes. See our [Content Policy](https://repository.cern/content-policy) for details.
 
-## ✅ What to deposit
+## Permitted content
 
 You can find detailed guidance in our [Content Policy](https://repository.cern/content-policy), but in general CDS is intended for:
 
@@ -22,7 +22,7 @@ You can find detailed guidance in our [Content Policy](https://repository.cern/c
 - Departmental and administrative documents meant for long-term preservation
 - Official multimedia (e.g. photos)
 
-## ❌ What **not** to deposit
+## Other content
 
 CDS is **not** the right place for:
 
@@ -36,6 +36,6 @@ For such content, evaluate using [CERNBox](https://cernbox.cern.ch) instead.
 
 Want to know more about the ongoing migration? See [our migration mini-site](https://new-cds-project.docs.cern.ch/).
 
-## Need Help?
+## Need help?
 
 For questions or support, please contact the [CDS support team](https://cern.service-now.com/service-portal?id=service_element&name=CDS-Service).

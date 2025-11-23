@@ -111,7 +111,7 @@ nav:
   - Deposit:
       - Upload: deposit/upload.md
       - Published records: deposit/published-records.md
-      - Restrict & Share: deposit/restrict-share.md
+      - Access & Share: deposit/access-share.md
   - Search:
       - How to search: search/search.md
   - Communities:
