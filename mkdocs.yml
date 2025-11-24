@@ -96,11 +96,8 @@ extra_css:
 
 # Extra configuration
 extra:
-  # Social links
+  homepage: https://repository.cern
   social:
-    - icon: fontawesome/solid/globe
-      link: https://repository.cern
-      name: CDS Repository
     - icon: fontawesome/brands/github
       link: https://github.com/cerndocumentserver/cds-rdm
       name: CDS-RDM on GitHub
