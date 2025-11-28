@@ -1,3 +1,7 @@
+!!! Note
+
+    This documentation site is still a work in progress. We are in the process of completing the missing parts.
+
 CDS (CERN Document Server) is the **CERN Institutional Repository**.
 It preserves and disseminates CERN's research outputs — including **publications, software, datasets, departmental documents, and multimedia materials** — ensuring their long-term accessibility.
 

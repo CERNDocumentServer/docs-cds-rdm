@@ -2,7 +2,7 @@
 
 To upload new content, first login with your CERN account by clicking on the login button on the top-right corner of any page.
 
-![Login](images/login.jpg)
+![Login](images/login.jpg){ width="300" }
 
 !!! Tip
 
@@ -18,7 +18,7 @@ on the **Communities** menu in the top header:
 
 Then, click on the **New upload** green button:
 
-![Upload to a community](images/communities-new-upload.jpg)
+![Upload to a community](images/communities-new-upload.jpg){ width="600" }
 
 You will now see the deposit form.
 
@@ -39,7 +39,7 @@ By default, you can maximum upload up to 100 files and a total of 50GB.
 
 You can define embargo policies for your files by restricting access to files and selecting the option **Apply an embargo**:
 
-![Deposit](images/deposit-embargo.jpg)
+![Deposit](images/deposit-embargo.jpg){ width="300" }
 
 ## Required metadata
 
@@ -49,7 +49,7 @@ For each upload, you will have to fill in the following mandatory information:
 - **Resource type**: select one of the available resource types. Please [contact us](../index.md#need-help) if you are unsure.
 - **Author/Creators**: fill in all the authors or creators of your deposit. When adding authors, it is recommended to search the name in the auto-complete box. CDS is regularly synced with the [ORCiD](https://orcid.org) and CERN users databases.
 
-![Deposit add authors](images/deposit-author.jpg)
+![Deposit add authors](images/deposit-author.jpg){ width="600" }
 
 ## DOIs
 
@@ -86,12 +86,12 @@ Refer to the [Access & Share](access-share.md) help page to learn how to change 
 
 You can preview and save your upload any time by clicking on the **Preview** and **Save** buttons:
 
-![Preview and Save](images/deposit-actions.jpg)
+![Preview and Save](images/deposit-actions.jpg){ width="300" }
 
 When you are ready, you can publish your upload by clicking on the **Publish** button.
 You will need to agree with the CDS terms & conditions, content policy and Operational Circular 6.
 
-![Publish](images/deposit-publish.jpg)
+![Publish](images/deposit-publish.jpg){ width="500" }
 
 !!! Tip
 

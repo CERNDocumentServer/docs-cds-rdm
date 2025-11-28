@@ -4,7 +4,7 @@ Until published, your upload is accessible only by you, and it is not visible or
 
 To grant access for viewing or editing your upload, you can click on the **Share** button:
 
-![Share](images/deposit-actions.jpg)
+![Share](images/deposit-actions.jpg){ width="300" }
 
 The share interface allows you to define which users and e-groups can access, with granular rights.
 You can also generate shareable links that can be send to colleagues who cannot login in CDS.
@@ -12,27 +12,23 @@ You can also generate shareable links that can be send to colleagues who cannot 
 In the **Visibility** section, you can change the access settings to your upload when published.
 You can restrict access to your entire record, metadata and files, or only to files:
 
-![Visibility](images/deposit-visibility.jpg)
+![Visibility](images/deposit-visibility.jpg){ width="300" }
 
 ### Enable access requests
 
-FIX-ME
 For published records with restricted file access (but public metadata), you can enable **access requests**.
 In the record page, unauthorized users will see a **Request access** form instead of a permission error:
 
-![ADD SCREENSHOT HERE for request access form]()
+![Request access form](images/record-files-access-request.jpg)
 
 You can enable or disable the access request feature from the **Share** interface, in both upload or record page.
 
-![ADD SCREENSHOT HERE for request access share btn]()
+![Request access share btn](images/share-access-request.jpg)
 
 You can define if only logged in users or also anonymous users can request access,
 and provide an help text that will be displayed to unauthorized users.
 
 When an unauthorized user will request access, you will receive an e-mail notification to approve or deny the request.
-
-
-FIXME: what happens when you cannot create an account in the system????
 
 ## Who can access
 
@@ -60,5 +56,3 @@ When creating a new version, visibility and share permissions have to be re-defi
 When a record is included to a restricted community, its visibility can only be restricted.
 
 Restricted communities cannot contain public records.
-
-

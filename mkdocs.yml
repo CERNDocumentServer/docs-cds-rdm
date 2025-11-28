@@ -73,6 +73,7 @@ theme:
 
 # Plugins
 plugins:
+  - glightbox
   - search:
       lang: en
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
