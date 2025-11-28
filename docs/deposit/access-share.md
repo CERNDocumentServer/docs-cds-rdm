@@ -1,58 +1,52 @@
 # Access & Share
 
-Until published, your upload is accessible only by you, and it is not visible or findable in CDS.
+Until published, your upload is accessible only to you; it is not visible or findable in CDS.
 
-To grant access for viewing or editing your upload, you can click on the **Share** button:
+To grant others viewing or editing access to your upload, click the **Share** button:
 
-![Share](images/deposit-actions.jpg){ width="300" }
+![Share button in the upload page](images/deposit-actions.jpg){ width="300" }
 
-The share interface allows you to define which users and e-groups can access, with granular rights.
-You can also generate shareable links that can be send to colleagues who cannot login in CDS.
+The Share interface lets you specify which users and e-groups can access the upload, and assign granular permissions. You can also generate shareable links that can be sent to colleagues who cannot log in to CDS.
 
-In the **Visibility** section, you can change the access settings to your upload when published.
-You can restrict access to your entire record, metadata and files, or only to files:
+In the **Visibility** section you can change the access settings that will apply when your upload is published. You can restrict access to the entire record (metadata and files) or restrict only the files:
 
-![Visibility](images/deposit-visibility.jpg){ width="300" }
+![Visibility settings for an upload](images/deposit-visibility.jpg){ width="300" }
 
 ### Enable access requests
 
-For published records with restricted file access (but public metadata), you can enable **access requests**.
-In the record page, unauthorized users will see a **Request access** form instead of a permission error:
+For published records with restricted file access (while metadata remains public), you can enable **access requests**. When an unauthenticated or unauthorized user views the record page, they will see a **Request access** form instead of a permission error:
 
-![Request access form](images/record-files-access-request.jpg)
+![Request access form shown to unauthorized users](images/record-files-access-request.jpg)
 
-You can enable or disable the access request feature from the **Share** interface, in both upload or record page.
+You can enable or disable access requests from the Share interface (available on both the upload and the record page):
 
-![Request access share btn](images/share-access-request.jpg)
+![Enable access requests from the Share interface](images/share-access-request.jpg)
 
-You can define if only logged in users or also anonymous users can request access,
-and provide an help text that will be displayed to unauthorized users.
+When configuring access requests you can:
 
-When an unauthorized user will request access, you will receive an e-mail notification to approve or deny the request.
+- Allow requests only from logged-in users, or also from anonymous users.
+- Add a help text that will be displayed to users who are not authorized to access the files.
+
+When an unauthorized user requests access, you (or the designated approver) will receive an email notification to approve or deny the request.
 
 ## Who can access
 
 ### Drafts
 
-The uploader can always access their drafts.
-Users, e-groups and receivers of links defined in the share interface will be able to access and perform the related actions.
+The uploader always has access to their drafts. Any users, e-groups, or recipients of shareable links defined in the Share interface will also be able to access and perform the permitted actions.
 
 ### Records
 
-Any sharing permission defined when uploading is persisted on publish.
+Any sharing permissions defined during upload are persisted on publish.
 
-When a record is part of one or multiple communities, **all community members** will also be able to **access** the record.
-Community curators, managers and owners will also be able to **edit** the record.
+When a record belongs to one or more communities, **all community members can access** the record. Community curators, managers, and owners **can also edit** the record.
 
 ## Record versions
 
-Record's visibility and share permissions are applied **only to a specific version** of a record.
-When creating a new version, visibility and share permissions have to be re-defined.
+Visibility and sharing permissions apply **only to the specific version** of a record. When you create a new version, visibility and sharing settings must be re-defined.
 
-**Community members** can always access to **all versions** of the record.
+Community members **can access all versions** of a record.
 
 ## Restricted communities
 
-When a record is included to a restricted community, its visibility can only be restricted.
-
-Restricted communities cannot contain public records.
+When a record is included in a restricted community, its visibility can only be restricted. Restricted communities cannot contain public records.
