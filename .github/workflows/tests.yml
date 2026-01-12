@@ -36,7 +36,16 @@ jobs:
       - name: Build
         run: uv run mkdocs build --clean --strict -v
 
+      # Mkdocs generates a 404 file with absolute links to /docs/..., which is of course
+      # needed as it doesn't know which path the 404 page will be rendered for.
+      # However, `hyperlink` doesn't understand this absolute path so will always fail
+      # the link check for it.
+      # `hyperlink` doesn't yet have an option to ignore files, so we will remove it 
+      # manually here.
+      - name: Remove 404 file
+        run: rm site/404.html
+
       - name: Check links
-        uses: untitaker/hyperlink@0.1.44
+        uses: untitaker/hyperlink@0.2.0
         with:
           args: site/ --sources docs/
