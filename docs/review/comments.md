@@ -115,8 +115,8 @@ When a conversation is locked or unlocked, an event appears in the conversation 
 <!-- This is a CDS-specific feature, we should remove it when copying this over to generic docs -->
 - Replying to existing comments is still allowed (replies can be created and deleted but not edited)
 
-<!-- TODO: add a link to the community permissions docs once we have written them -->
-Community curators (and above) can unlock the conversation at any time.
+Members of the community to which the record is submitted (with the **Curator** role or above) can lock and unlock the conversation.
+See more information about roles in [About communities](../communities/communities.md#members-and-roles).
 
 To lock a conversation, click the "Lock conversation" button in the right-hand sidebar:
 
