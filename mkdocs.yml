@@ -114,7 +114,7 @@ nav:
       - How to search: search/search.md
   - Communities:
       - About communities: communities/communities.md
-      - Manage: communities/manage.md
+      - Manage communities: communities/manage.md
       - Submit: communities/submit.md
   - Reviews:
       - About reviews: review/review.md
