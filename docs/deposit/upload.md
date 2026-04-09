@@ -34,6 +34,30 @@ If you need more, please contact us.
 
 ![Files upload area in the deposit form](images/deposit-upload.jpg)
 
+### File previewers
+
+CDS can display many file types directly in the browser on the record's landing page, without requiring a download. The following formats are supported:
+
+| Format | Examples |
+|---|---|
+| Images | JPG, PNG, GIF, TIFF, WebP |
+| Documents | PDF |
+| Plain text and code | TXT, CSV, JSON, XML, Markdown |
+| Notebooks | Jupyter (`.ipynb`) |
+| 3D models | GLTF, GLB |
+| Archives | ZIP, WARC, TAR |
+
+Files that are not in a supported format will show a download button instead of a preview.
+
+![Jupyter notebook previewer](images/ipynb-preview.jpg)
+
+![3D model previewer](images/gltf-preview.jpg)
+
+
+!!! tip
+
+    For 3D models, the previewer allows you to rotate, zoom, and pan the model directly in the browser. No additional software is required.
+
 ### Embargo
 
 You can apply an embargo to one or more files by selecting **Apply an embargo** and configuring the embargo policy:
