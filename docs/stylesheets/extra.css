@@ -94,3 +94,28 @@
 .md-nav__item .md-nav__item {
   color: #333;
 }
+
+/* FAQ collapsible admonitions */
+.md-typeset details.question {
+  border: 1px solid var(--cern-blue) !important;
+  border-left: 4px solid var(--cern-blue) !important;
+  border-radius: 0 4px 4px 0;
+}
+
+.md-typeset details.question > summary {
+  color: #333;
+  font-weight: 600;
+  background-color: rgba(77, 148, 206, 0.12) !important;
+}
+
+.md-typeset details.question > summary::before {
+  background-color: var(--cern-blue) !important;
+}
+
+.md-typeset details[open].question > summary {
+  color: var(--cern-blue);
+}
+
+.md-typeset details.question > summary::after {
+  background-color: var(--cern-blue) !important;
+}

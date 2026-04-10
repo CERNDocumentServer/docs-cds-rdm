@@ -83,6 +83,7 @@ markdown_extensions:
   # Python Markdown
   - abbr
   - admonition
+  - pymdownx.details
   - attr_list
   - def_list
   - footnotes
