@@ -1,6 +1,6 @@
 # Submit to a community
 
-When you are uploading a record, you can submit it for review to a community. Communities may have their own metadata requirements and review workflows. This page explains what happens during submission, how to handle metadata issues, and how to manage community membership for your records.
+When you are uploading a record, it needs to be reviewed by a community. Communities may have their own metadata requirements and review workflows. This page explains what happens during submission, how to handle metadata issues, and how to manage community membership for your records.
 
 ## Where should I submit?
 
@@ -12,7 +12,12 @@ If you are unsure which community to submit to, the table below covers the most 
 | Internal CERN report, note, or technical document | The relevant experiment or department community, if one exists |
 | Dataset or software produced as part of a CERN experiment | The relevant experiment community |
 
-You can always submit to more than one community if the record fits multiple scopes. See [Multiple communities](#multiple-communities) below.
+!!! note "Can't find your community?"
+    If your community does not appear in the new CDS or the deposit form, it may still only be present in the legacy CDS. Communities are being migrated progressively to the new CDS.
+    See the [CDS Migration page](https://new-cds-project.docs.cern.ch/) for updates on the migration status and timeline.
+
+You can submit your record to more than one community only **after** your record has already been published to an initial community.
+Only then can you submit it to additional communities if it fits multiple scopes. See [Multiple communities](#multiple-communities) below for details.
 
 !!! tip
 
@@ -25,26 +30,6 @@ Before a record can be accepted into a community, CDS checks that the record's m
 ![Metadata Check](./images/metadata_checks.png)
 
 If any required fields are missing or invalid, you will see the list of issues that must be resolved before the submission can proceed as shown.
-
-## Related identifiers
-
-If your record is related to another resource — for example, a preprint that has since been published in a journal, or a dataset associated with a paper — you should link them using **Related identifiers** in the deposit form. This improves discoverability and helps readers find all versions of a work.
-
-Common relationships to declare:
-
-| Situation | Relation type to use |
-|---|---|
-| This record is a preprint; a published version exists elsewhere | `IsVersionOf` (this record) → journal DOI |
-| This record is the published version; a preprint exists | `HasVersion` (this record) → preprint DOI |
-| A new version of this record exists | `IsPreviousVersionOf` → new version DOI |
-| This record supersedes an older version | `IsNewVersionOf` → old version DOI |
-| This record is a dataset used by a paper | `IsSupplementTo` → paper DOI |
-
-To add a related identifier, open the deposit form, scroll to the **Related works** section, and enter the identifier (DOI, arXiv ID, handle, etc.) along with the appropriate relation type.
-
-![Related identifiers](./images/related_identifiers.png)
-
-For a full list of supported relation types and detailed guidance, see the [DataCite documentation on connecting related works](https://support.datacite.org/docs/connecting-to-works).
 
 ## Multiple communities
 
@@ -66,26 +51,10 @@ To submit to an additional community after the record is already published:
 
     Each community has its own review process. Submitting to multiple communities means each community's curators will independently review and decide on your record.
 
-## Removing from community
+## Removing from a community
 
-You can remove a record from a community if you no longer want it listed there, or if the community no longer fits the record's scope.
-
-To remove a record from a community:
-
-1. Open the record's page.
-2. Navigate to the Communities Panel (on computers, it's on the right; on phones/tablets, scroll down to the bottom of the page).
-3. In the dropdown menu, select **Manage communities**.
-4. Click **Remove** and confirm the removal.
-
-Removal is allowed in the following situations:
-
-- The record has been accepted into the community and you are the record owner.
-- The community curator removes the record from their community.
-- A CDS administrator removes the record.
-
-!!! warning
-
-    Removing a record from a community does not delete the record itself. The record remains published and accessible via its DOI and direct URL. Only the community association is removed.
+!!! note "Removing from a community is not possible"
+    If you need to change/remove the community associated with your record, please contact the [CDS support team](https://cern.service-now.com/service-portal?id=service_element&name=CDS-Service).
 
 If a submission is still under review (not yet accepted), you can withdraw it instead of removing it:
 
@@ -101,7 +70,7 @@ If a submission is still under review (not yet accepted), you can withdraw it in
 
 ## CERN Research
 
-[**CERN Research**](https://repository.cern/communities/cern-research) is the one of the primary communities for storing scientific output produced at or in collaboration with CERN. It is intended for peer-reviewed publications, preprints, conference papers, theses, and other research outputs directly associated with CERN's scientific programme.
+[**CERN Research**](https://repository.cern/communities/cern-research) is the one of the primary communities for storing scientific output produced at or in collaboration with CERN. It is intended for peer-reviewed publications, preprints, conference papers, theses, and other research outputs.
 
 ![CERN Research](./images/cern_research.png)
 
@@ -109,10 +78,8 @@ If a submission is still under review (not yet accepted), you can withdraw it in
 
 You should submit to CERN Research if your record is:
 
-- A publication or preprint authored by CERN staff, fellows, or associates.
 - A thesis carried out at CERN or under CERN supervision.
-- A conference contribution or proceedings paper from a CERN experiment or project.
-- Any other research output that acknowledges CERN or is produced within a CERN experiment.
+<!-- TODO: Add more when finalized -->
 
 ### Review workflow
 

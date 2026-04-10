@@ -92,6 +92,26 @@ Because metadata is submitted to DataCite when registering a DOI, you cannot req
 
     When requesting a DOI, CDS will register two DOIs. Read more in the [DOI versioning FAQ](https://repository.cern/help/versioning).
 
+## Related identifiers
+
+If your record is related to another resource — for example, a preprint that has since been published in a journal, or a dataset associated with a paper — you should link them using **Related identifiers** in the deposit form. This improves discoverability and helps readers find all versions of a work.
+
+Common relationships to declare:
+
+| Situation | Relation type to use |
+|---|---|
+| This record is a preprint; a published version exists elsewhere | `IsVersionOf` (this record) → journal DOI |
+| This record is the published version; a preprint exists | `HasVersion` (this record) → preprint DOI |
+| A new version of this record exists | `IsPreviousVersionOf` → new version DOI |
+| This record supersedes an older version | `IsNewVersionOf` → old version DOI |
+| This record is a dataset used by a paper | `IsSupplementTo` → paper DOI |
+
+To add a related identifier, open the deposit form, scroll to the **Related works** section, and enter the identifier (DOI, arXiv ID, handle, etc.) along with the appropriate relation type.
+
+![Related identifiers](./images/related-identifiers.jpg)
+
+For a full list of supported relation types and detailed guidance, see the [DataCite documentation on connecting related works](https://support.datacite.org/docs/connecting-to-works).
+
 ## Other metadata fields
 
 The deposit form supports many additional metadata fields to help describe your upload. Common fields include:
