@@ -13,8 +13,15 @@ If you are unsure which community to submit to, the table below covers the most 
 | Dataset or software produced as part of a CERN experiment | The relevant experiment community |
 
 !!! note "Can't find your community?"
+
     If your community does not appear in the new CDS or the deposit form, it may still only be present in the legacy CDS. Communities are being migrated progressively to the new CDS.
     See the [CDS Migration page](https://new-cds-project.docs.cern.ch/) for updates on the migration status and timeline.
+
+!!! tip "Submitting software to CDS"
+    
+    If your software is in a repository on either CERN's internal GitLab instance ([gitlab.cern.ch](https://gitlab.cern.ch)) or on [GitHub.com](https://github.com), you can set up automatic archiving in a few easy steps.
+
+    See our [guide to GitLab & GitHub repositories](../deposit/repositories.md).
 
 You can submit your record to more than one community only **after** your record has already been published to an initial community.
 Only then can you submit it to additional communities if it fits multiple scopes. See [Multiple communities](#multiple-communities) below for details.
