@@ -60,6 +60,24 @@ On the "Pages" section of the "Settings" tab, you can customise the "Curation po
 - The **Curation policy** can be used to specify criteria and guidelines for records submitted to the community. Specify as much detail as possible to make reviewing submissions easier.
 - The **About** page can be used to provide more information about the community and its purpose.
 
+### Collections
+
+![The collection settings within the community settings tab](./images/community_collections.png)
+
+The "Collections" section of the "Settings" tab allows you to organize your community's records into curated collections based on search filters. Collections help users browse and discover records through meaningful thematic groupings.
+
+Community owners can manage collections through the community settings interface:
+
+1. Navigate to your community's settings page
+2. Click on the **Collections** tab in the left sidebar
+3. Use the interface to:
+    - Create new sections (collection trees).
+    - Add collections within sections.
+    - Create nested child collections.
+    - Edit collection queries and metadata.
+    - Reorder collections via drag-and-drop.
+    - Delete collections and sections.
+
 ## Members
 
 You can view a list of the community's members and their roles in the "Members" tab.
