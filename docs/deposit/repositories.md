@@ -24,15 +24,26 @@ To be able to sync your repositories, you need to connect your GitLab and/or Git
     any other repository services. If your repository is hosted elsewhere, you can create and publish records
     for its releases manually: see how to [upload a record](./upload.md).
 
-!!! info "Repository visibility"
+!!! info "Supported repositories"
 
-    **Only repositories for which you have sufficient access permissions are shown.**
-    In general, you must be able to view the repository and manage its webhooks. 
-    If you do not have the correct level of access to a repository, it will not be visible in the list on CDS.
+    **Not all repositories are supported.** Unsupported repositories will not appear in the list.
 
-    On GitLab, this means you need either the **Maintainer** or **Owner** role on the project or its group. See [GitLab's project permissions documentation](https://docs.gitlab.com/user/permissions/#projects) for more information.
+    Only repositories meeting the following criteria are visible. If your repository does not appear in the list, please
+    check that it meets all of these. If it is still not shown, please [contact us](../index.md#need-help).
 
-    On GitHub, this usually means you need at least the **Admin** role on the repository. See [GitHub's roles documentation](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization) for more information.
+    - **Sufficient access permissions**
+
+        - In general, you must be able to view the repository and manage its webhook.
+
+        - On GitLab, this means you need either the **Maintainer** or **Owner** role on the project or its group. See [GitLab's project permissions documentation](https://docs.gitlab.com/user/permissions/#projects) for more information.
+
+        - On GitHub, this usually means you need at least the **Admin** role on the repository. See [GitHub's roles documentation](https://docs.github.com/en/organizations/managing-user-access-to-your-organizations-repositories/managing-repository-roles/repository-roles-for-an-organization) for more information.
+
+    - **Public visibility**: The repository must be set to "public". "Internal" and "private" repositories are not supported.
+
+    - **Has a file tree**: Uninitialized repositories that don't contain files will not be visible.
+
+        - On GitLab, if the "Repository" feature is disabled on the project, it will not be visible.
 
 ## Enable a repository
 
@@ -57,14 +68,15 @@ To view the status of a release and the record created from it, click on the rep
 ![The list of a repository's release, with each item showing the status and a link to the record](./images/vcs-releases.png)
 
 ### Release statuses
+
 The status of each release is shown. The possible statuses are as follows:
 
 - **Received**/**Processing**: CDS has received the release from GitHub/GitLab and is processing it. This normally takes a few seconds, but can sometimes take longer for very large repositories. If a repository is stuck in this state for a longer time, please [contact the CDS team via ServiceNow](https://cern.service-now.com/service-portal?id=sc_cat_item&name=incident&se=CDS-Service) with the full name of your repository.
 
-- **Failed**: There was a problem creating a record from the release. Usually, this means some part of the repository contained unexpected data. Click on the release and click on the "Errors" tab to see more information. 
+- **Failed**: There was a problem creating a record from the release. Usually, this means some part of the repository contained unexpected data. Click on the release and click on the "Errors" tab to see more information.
 
-- In most cases, you will need to modify the repository, and then create a new release.
-- If an "Edit record" button is visible, you can instead edit the draft record to correct the errors, and then publish it manually.
+    - In most cases, you will need to modify the repository, and then create a new release.
+    - If an "Edit record" button is visible, you can instead edit the draft record to correct the errors, and then publish it manually.
 
 - **Pending review**: The record was successfully created as a draft and is pending review by the community it was submitted to. Once it is accepted, it will be published immediately. No further action is required from you.
 
