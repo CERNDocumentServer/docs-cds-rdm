@@ -4,13 +4,35 @@ Until published, your upload is accessible only to you; it is not visible or fin
 
 To grant others viewing or editing access to your upload, click the **Share** button:
 
-![Share button in the upload page](images/deposit-actions.jpg){ width="300" }
+![Share button in the upload page](images/share-button.png){ width="300" }
 
 The Share interface lets you specify which users and e-groups can access the upload, and assign granular permissions. You can also generate shareable links that can be sent to colleagues who cannot log in to CDS.
 
 In the **Visibility** section you can change the access settings that will apply when your upload is published. You can restrict access to the entire record (metadata and files) or restrict only the files:
 
 ![Visibility settings for an upload](images/deposit-visibility.jpg){ width="300" }
+
+### Grant access to people and e-groups
+
+You can use the **Share** interface to give specific people or CERN e-groups access to a [draft](../glossary.md#draft) before publication, or to a restricted [record](../glossary.md#published-record) after publication.
+
+To grant access:
+
+1. Click the **Share** button.
+2. Open the **People** or **Groups** tab.
+
+![People tab in the Share interface](images/share-access-people.png){ width="1200" }
+
+![Groups tab in the Share interface](images/share-access-groups.png){ width="1200" }
+
+3. Click **Add people** or **Add groups**.
+4. Search for the person or e-group you want to add.
+5. Choose the permission level to grant.
+6. Confirm the action.
+
+The selected people or e-groups will then appear in the access list in the Share interface.
+
+You can also optionally notify the selected people when granting access and include a message in the notification.
 
 ### Enable access requests
 
