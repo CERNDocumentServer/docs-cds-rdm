@@ -122,6 +122,8 @@ nav:
   - Reviews:
       - About reviews: review/review.md
       - Commenting: review/comments.md
+  - Committee approval:
+      - About the approval process: approval/approval.md
   - Reference: reference/reference.md
   - Glossary: glossary.md
   - FAQ: faq.md
