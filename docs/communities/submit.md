@@ -18,7 +18,7 @@ If you are unsure which community to submit to, the table below covers the most 
     See the [CDS Migration page](https://new-cds-project.docs.cern.ch/) for updates on the migration status and timeline.
 
 !!! tip "Submitting software to CDS"
-    
+
     If your software is in a repository on either CERN's internal GitLab instance ([gitlab.cern.ch](https://gitlab.cern.ch)) or on [GitHub.com](https://github.com), you can set up automatic archiving in a few easy steps.
 
     See our [guide to GitLab & GitHub repositories](../deposit/repositories.md).
