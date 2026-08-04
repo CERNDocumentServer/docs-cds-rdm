@@ -74,6 +74,69 @@ The following fields are mandatory for each upload:
 
 ![Add authors using the autocomplete field](images/deposit-author.jpg){ width="600" }
 
+For large author lists, you can use the **Import from File** option where you can prepare a list in a JSON file and upload them all at once:
+
+!!! tip
+
+    **Bulk import** lets you quickly add many authors/contributors by uploading a file, but only the details in your file are imported, with no extra information (such as ORCID or affiliations) fetched automatically.
+
+    For best results, use autocomplete for individuals where possible to get richer data, and use bulk import for large groups or when your file already has all the needed information.
+
+*1. Prepare your file*
+
+Create a file (for example, `authors.json`) containing all the authors or contributors you want to add. The file should contain a list of people or organizations with their details.
+
+!!! note "Supported file formats"
+
+    Bulk import currently supports JSON files. Support for additional formats (such as BibTeX) will be added soon.
+
+- Each entry should include:
+    - For people:
+    - `type`: Always `"personal"`
+    - `family_name`: Last name (required)
+    - `given_name`: First name (optional)
+    - `identifiers`: e.g., ORCID (optional)
+    - For organizations:
+    - `type`: Always `"organizational"`
+    - `name`: Name of the organization (required)
+    - Affiliations can also be included.
+
+!!! warning "Differences between contributors and authors"
+
+    To add contributors, use a separate JSON file and upload it with the "Upload contributors from file" button.
+
+    **Each contributor entry must also include a `role` field, for example: `"role": "editor"`.**
+
+Example JSON file:
+
+    [
+        {
+            "person_or_org": {
+                "type": "personal",
+                "family_name": "Smith",
+                "given_name": "Jane",
+                "identifiers": [
+                    { "scheme": "orcid", "identifier": "0000-0002-1825-0097" }
+                ]
+            },
+            "affiliations": [{ "name": "European Organization for Nuclear Research" }]
+        },
+        {
+            "person_or_org": {
+                "type": "organizational",
+                "name": "European Organization for Nuclear Research"
+            }
+        }
+    ]
+
+*2. Upload the file and review your additions*
+
+In the Authors/Contributors section of the deposit form, look for the option to import from file. Upload your prepared JSON file.
+
+![Upload the file](./images/bulk-import-authors.png)
+
+After import, CDS displays all the entries. You can check, edit, or reorder them before saving. If there are any invalid entries, they are skipped: you’ll see a message so you can fix and re-import if needed.
+
 ## DOIs
 
 If you need a DOI, select `No, I need one` and CDS will register a DOI automatically when the record is published. You can also reserve a DOI immediately using the **Get a DOI now!** button.
