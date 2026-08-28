@@ -14,6 +14,30 @@ A review is the process by which a community evaluates a record before accepting
 
 Curators can invite any CDS user as a reviewer on a specific submission, even if that person is not a community member. This is useful when specialist input is needed before a decision is made. See [Commenting](comments.md) for details on how to use the conversation features during a review.
 
+## Accessing a review request
+
+There are two ways to reach a review request, depending on whether you have access to the record itself.
+
+### Via your dashboard
+
+This route is always available, even if the record is restricted or not yet published.
+
+1. Go to [My dashboard → Requests](https://repository.cern/me/requests).
+2. Use the **Shared with me** tab to find requests where you have been invited as a reviewer, or **My requests** for submissions you created.
+
+!!! tip "Can't find a request?"
+    Open requests appear under the **Open** tab. Once a request has been accepted, cancelled or declined, it moves to the **Closed** tab.
+
+### Via the record landing page
+
+If you can view the record, you can reach the request directly from it.
+
+1. Open the record's page.
+2. In the **Communities** sidebar, click **View comments** next to the relevant community.
+
+!!! note "Who can see the View comments link"
+    The link is visible to the record owner, community curators, managers and owners, users with edit access or above, and anyone explicitly invited as a reviewer on the request associated with that record.
+
 ## Typical workflow
 
 ### 1. Submission
