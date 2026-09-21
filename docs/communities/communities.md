@@ -22,7 +22,7 @@ Please [contact the CDS team via ServiceNow](https://cern.service-now.com/servic
 - The type of records that will be published in the community (please send links to examples if possible)
 - Whether reviews should be mandatory for newly submitted records (see [Submission policy](./manage.md#submission-policy))
 - Whether the community's contents should be publicly visible
-- The name of a dedicated [GMS group](https://auth.docs.cern.ch/groups/overview/) to set as the initial member of the community
+- The name of a dedicated [GMS group](https://auth.docs.cern.ch/groups/overview/) to set as the initial member of the community, and the [role](#members-and-roles) to assign to it
 
 ## Members and roles
 
